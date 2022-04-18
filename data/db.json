@@ -1,29 +1,24 @@
 {
   "posts": [
     {
-      "id": 4,
-      "dateTime": "April 12, 2022 7:09:00 PM",
-      "body": "teszt"
-    },
-    {
-      "id": 5,
-      "dateTime": "April 12, 2022 8:48:55 PM",
-      "body": "ez egy komment"
-    },
-    {
-      "id": 6,
-      "dateTime": "April 12, 2022 9:06:09 PM",
-      "body": "Ez a véleményem!"
-    },
-    {
       "id": 7,
-      "dateTime": "April 12, 2022 9:06:24 PM",
-      "body": "Szerintem jó"
+      "dateTime": "April 18, 2022 1:37:20 PM",
+      "body": "Szerintem nagyon jó"
     },
     {
       "id": 8,
       "dateTime": "April 12, 2022 9:37:11 PM",
       "body": "nagyon jó az oldal"
+    },
+    {
+      "id": 9,
+      "dateTime": "April 18, 2022 1:30:55 PM",
+      "body": "új komment"
+    },
+    {
+      "id": 10,
+      "dateTime": "April 18, 2022 1:38:38 PM",
+      "body": "teszt"
     }
   ]
 }

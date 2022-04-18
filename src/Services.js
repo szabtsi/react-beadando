@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table } from 'react-bootstrap';
+import brandLogo from './img/logo.png';
 
 const Services = () => {
    return (
@@ -10,7 +10,7 @@ const Services = () => {
                <div className="prices rounded col-12 col-md-9 col-xl-7 col-xxl-6 mx-auto mb-5">
                   <div className="tableBox mt-5 text-light p-3">
                      <h2 className='text-center'>Szolgáltatások</h2>
-                     <h3>Személyautó <img src={require('./img/logo.png')} title="Felföldi Gumi" alt="Felföldi Gumi" className="bg-white rounded float-end" /></h3>
+                     <h3>Személyautó <img src={brandLogo} title="Felföldi Gumi" alt="Felföldi Gumi" className="bg-white rounded float-end" /></h3>
 
                      <Table className='text-light'>
                         <tbody>

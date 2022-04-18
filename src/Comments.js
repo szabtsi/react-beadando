@@ -2,10 +2,10 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import api from './api/posts';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
-const Comments = () => {
-   const [posts, setPosts] = useState([]);
+const Comments = ({ posts, setPosts }) => {
+   
    const [postBody, setPostBody] = useState('');
 
    useEffect(() => {
@@ -26,7 +26,8 @@ const Comments = () => {
       }
 
       fetchPost();
-   }, []);
+   }, [setPosts]);
+
 //új poszt
    const handleSubmit = async (e) => {
       e.preventDefault();
@@ -42,6 +43,7 @@ const Comments = () => {
          console.log(`Error: ${err.message}`);
       }
    }
+   
 // poszt törlés
    const handleDelete = async (id) => {
       try {
@@ -80,6 +82,7 @@ const Comments = () => {
                            <h3>{post.body}</h3>
                         </div>
                         <button className='btn btn-danger' onClick={() => handleDelete(post.id)}>Törlés</button>
+                        <Link posts={posts} to={`/edit/${post.id}`}><button className='btn btn-warning ms-2'>Szerkesztés</button></Link>
                      </div>
                   ))) : (
                      <p>Nincs még vélemény!</p>
