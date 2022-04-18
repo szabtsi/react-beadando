@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import brandLogo from './img/logo.png';
 
 const Contacts = () => {
    return (
@@ -9,7 +9,7 @@ const Contacts = () => {
                <div className="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-8 col-xxl-7 contactsBox rounded d-flex flex-column flex-xl-row p-3 justify-content-center mt-5 mx-sm-auto mb-xl-5">
 
                   <ul className="text-light me-md-3 ps-0 fs-5">
-                     <li className="py-2 text-center"><img src={require('./img/logo.png')} title="Felföldi Gumi" alt="Felföldi Gumi" className="bg-white rounded" /></li>
+                     <li className="py-2 text-center"><img src={brandLogo} title="Felföldi Gumi" alt="Felföldi Gumi" className="bg-white rounded" /></li>
                      <li className="py-2">Felföldi </li>
                      <li className="py-2">Telefon: <a href="tel:+36304712416">+36 2121212116</a></li>
                      <li className="py-2">Cím: cím 1231</li>
